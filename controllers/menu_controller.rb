@@ -67,7 +67,7 @@ class MenuController
     print "Enter entry number to view: "
     selection = gets.chomp.to_i
 
-    if entry < @address_book.entries.count
+    if selection < @address_book.entries.count
       puts @address_book.entries[selection]
       puts "Press enter to return to main manu"
       gets.chomp
